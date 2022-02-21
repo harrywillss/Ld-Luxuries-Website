@@ -1,0 +1,112 @@
+* {
+  margin: 15px 20px;
+}
+
+html {
+  background-image: url('../Images/marble.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  padding: 0px;
+  background-color: transparent;
+  width: 100%;
+  min-height: 100%;
+}
+
+article {
+  margin: auto;
+}
+
+.brand {
+  text-align: center;
+  margin: 0px 42px 0px 0px;
+}
+
+.brand h1 {
+  font-family: "Courier Prime";
+  font-size: 45px;
+  font-size-adjust: auto;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.background {
+  padding: 0px;
+  image-resolution: 100%;
+}
+
+.contents {
+  margin: 0px 42px 0px 0px;
+  background-color: white;
+  border-radius: 11px;
+  align-content: center;
+}
+
+.contents h2 {
+  margin-top: 12px;
+  padding: 22px 0px 0px 22px;
+  font-size: 35px;
+  font-family: monospace;
+  text-decoration: underline;
+}
+
+.contents h3 {
+  font-size: 26px;
+}
+
+.contents p {
+  padding: 6px 19px 6px 19px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: white;
+  border-radius: 15px;
+  bottom: 0px;
+  float: left;
+}
+
+.navigation {
+  text-align: center;
+  padding: 2px;
+}
+
+.navigation a {
+  font-size: 29px;
+  font-family: monospace;
+  background-color: rgb(185, 247, 247);
+  text-decoration: none;
+  margin: 40px;
+  padding: 12px;
+  border-radius: 11px;
+  border-style: solid;
+  color: black;
+}
+
+.navigation a.active {
+  background-color: rgb(129, 248, 184);
+}
+
+.navigation a:hover {
+  background-color: rgb(234, 176, 242);
+  transition: 0.40s;
+}
+
+.navigation li {
+  display: inline;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.side {
+  background-color: white;
+}
