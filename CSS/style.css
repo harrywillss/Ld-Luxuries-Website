@@ -1,48 +1,86 @@
 * {
     margin: 15px 20px;
-  }
+}
 
-.page-header{
-  padding: 2vw;
+/* define the flexbox */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: maroon;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+/* header stuff */
+
+.page-title {
+  flex-grow: 9;
+}
+
+.header-contact {
+  flex-grow: 1;
+  background-color: salmon;
+}
+
+.header-contact p{
+  text-align: right;
+  background-color: aquamarine;
+}
+
+header{
+  padding: 0.2vw;
   text-align: center;
   font-family: 'Great Vibes', cursive;
   font-style: italic;
+  background-color: lime;
 }
 
-.page-header h1{
+header h1{
   font-size: 4vw;
   letter-spacing: 0.1em;
-  color: black;
+  background-color: aqua;
 }
 
-.page-header p {
-  font-size: 1.2vw;
-}
-
-.page-header a {
+header a {
   text-decoration: none;
   color: black;
 }
 
-.page-header a:hover {
+header a:hover {
   text-shadow: 3px 3px 2px gray;
   font-size: larger;
 }
 
-.header-contact {
-  padding: 1vw;
-  float: right;
+
+/* nav stuff */
+nav {
+  background-color: green;
+
 }
+
+/* content stuff */
 
 .main-content {
-  color: black;
+  background-color: darkkhaki;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
+/* footer stuff */
+
+footer {
+  background-color: yellow;
 }
 
-nav, header, footer, .main-content{
+/* flexbox stuff */
+.home-flex, .about-flex, .contact-flex, .image1-flex, .image2-flex {
+  background-color: magenta;
+}
+
+nav, header, header h1, footer, .main-content, .flex-container, .page-header h1, .header-contact {
   outline-style: solid;
 }
