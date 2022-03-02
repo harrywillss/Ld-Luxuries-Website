@@ -8,7 +8,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: maroon;
+  background-color: #fbbc93;
+  margin: 0;
 }
 
 @media (max-width: 800px) {
@@ -23,40 +24,59 @@
   flex-grow: 9;
 }
 
-.header-contact {
-  flex-grow: 1;
-  background-color: salmon;
+.page-title p {
+  font-size: 2vw;
+  cursor: pointer;
+  font-style: none;
+  padding-left: 1%;
+  float: left;
 }
 
-.header-contact p{
-  text-align: right;
-  background-color: aquamarine;
+.page-title p:hover{
+  text-shadow: 3px 3px 2px gray;
+  font-size: 2vw;
+}
+
+.title-contact {
+  flex-grow: 1;
+  background-color: white;
 }
 
 header{
-  padding: 0.2vw;
+  padding: 0vw;
   text-align: center;
   font-family: 'Great Vibes', cursive;
-  font-style: italic;
-  background-color: lime;
 }
 
 header h1{
-  font-size: 4vw;
+  font-size: 4.5vw;
+  font-style: italic;
   letter-spacing: 0.1em;
-  background-color: aqua;
+  background-color: white;
+  text-align: center;
 }
 
 header a {
   text-decoration: none;
+  font-style: italic;
   color: black;
 }
 
-header a:hover {
+.page-title a:hover{
   text-shadow: 3px 3px 2px gray;
-  font-size: larger;
+  font-size: 4.6vw;
 }
 
+.title-contact {
+  font-size: 1.5vw;
+  letter-spacing: 0em;
+  align-self: flex-end;
+}
+
+.title-contact a:hover{
+  text-shadow: 3px 3px 2px gray;
+  font-size: 1.6vw;
+}
 
 /* nav stuff */
 nav {
@@ -77,10 +97,19 @@ footer {
 }
 
 /* flexbox stuff */
-.home-flex, .about-flex, .contact-flex, .image1-flex, .image2-flex {
+.home-flex, .about-flex, .contact-flex, .image1-flex, .image2-flex, .reviews-flex {
   background-color: magenta;
 }
+.main-content p{
+  text-align: center;
+  background-color: gold;
+}
+.page-name {
 
-nav, header, header h1, footer, .main-content, .flex-container, .page-header h1, .header-contact {
+  text-align: center;
+  background-color: gold;
+}
+
+nav, header h1, footer, .main-content, .flex-container, .page-header h1, .header-contact, .page-name, .title-contact {
   outline-style: solid;
 }
